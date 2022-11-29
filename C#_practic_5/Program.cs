@@ -6,14 +6,14 @@ int amount = n.ToString().Length;
     Console.WriteLine(InCenter(n));
 }
 
-// Сообщение для отображения в консоли, вывод результата введенных данных пользователем
+// Сообщение для отображения в консоли, вывод результата введенных данных пользователем. 
 int ReadInt(string message)
 {
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
 }
 
-// Вывод цифры, стоящей в середине трехзначного числа.
+// Вывод цифры стоящей в середине трехзначного числа.
 int InCenter(int a)
 {
     
