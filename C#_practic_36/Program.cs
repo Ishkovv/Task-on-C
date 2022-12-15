@@ -9,7 +9,7 @@ Console.WriteLine("Массив: ");
 PrintArray(numbers);
 int sum = 0;
 
-for (int z = 0; z < numbers.Length; z+=2)
+for (int z = 1; z < numbers.Length; z+=2)
     sum = sum + numbers[z];
 
 Console.WriteLine($"всего {numbers.Length} чисел, сумма элементов на нечётных позициях = {sum}");
@@ -18,7 +18,7 @@ void FillArrayRandomNumbers(int[] numbers)
 {
     for(int i = 0; i < numbers.Length; i++)
         {
-            numbers[i] = new Random().Next(1,10);
+            numbers[i] = new Random().Next(1,100);
         }
 }
 void PrintArray(int[] numbers)
@@ -32,4 +32,4 @@ void PrintArray(int[] numbers)
     Console.WriteLine();
 }
 
-// Проверено на случайных числах. 
+// Проверено на случайном массиве. При вводе размера массива, например 4: Массив [ 49 57 19 54 ] сумма элементов на нечётных позициях = 111 
